@@ -97,7 +97,7 @@ int main()
 	//std::cout << "Celsius: " << degCelsius << std::endl;
 	//std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
 
-	//Area of a Rectangle
+	//Area of a Rectangle)
 
 	//float rectWidth = 0.0f; // Modify this variable below.
 	//float rectHeight = 0.0f; // Modify this variable below.
