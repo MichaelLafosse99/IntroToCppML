@@ -82,7 +82,7 @@ int main()
 	//float y = 13;
 	//y = y / 2;
 	//std::cout << "F)" << y << std::endl;
-	////Celsius to Fahrenheit)
+	////Celsius to Fahrenheit
 
 	//float degCelsius = 78.0f;
 	//float degFahrenheit = 0.0f;
@@ -97,7 +97,7 @@ int main()
 	//std::cout << "Celsius: " << degCelsius << std::endl;
 	//std::cout << "Fahrenheit: " << degFahrenheit << std::endl;
 
-	//Area of a Rectangle)
+	//Area of a Rectangle
 
 	//float rectWidth = 0.0f; // Modify this variable below.
 	//float rectHeight = 0.0f; // Modify this variable below.
@@ -116,7 +116,7 @@ int main()
 	//std::cout << "H: " << rectHeight << " , W: " << rectWidth << std::endl;
 	//std::cout << "Area: " << rectArea << std::endl;
 
-	//Average of Five)
+	//Average of Five
 
 	//float a, b, c, d, e;	// Modify these variables below.
 	//float avg;				// Modify this variable below.
