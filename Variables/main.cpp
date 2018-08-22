@@ -81,7 +81,8 @@ int main()
 
 	float y = 13;
 	y = y / 2;
-	std::cout << "F)" << y << std::endl;
+	std::cout << "F)" << y << std::endl;
+
 	//Celsius to Fahrenheit
 
 	float degCelsius = 78.0f;
