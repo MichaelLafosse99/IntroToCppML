@@ -166,15 +166,91 @@ int main()
 		int c = 0;
 		int d = 0;
 		int e = 0;
-		int sum = (a + b + c + d + e);
+		int one = a;
+		int two = b;
+		int three = c;
+		int four = d;
+		int five = e;
+		int sum = 0;
 
 		std::cout << "Enter five different numbers: " << std::endl;
 		std::cin >> a >> b >> c >> d >> e;
+		sum = a + b + c + d + e;
 
-		if (a > b && a > c && a > d && a > e && sum > 0)
+
+
+		if (sum > 0)
 		{
-			std::cout << a << "," << b << "," << c << "," << d << "," << e << std::endl;
+			if (a < b && a < c && a < d && a < e)
+			{
+				one = a;
+				if (b < c && b < d && b < e)
+				{
+					two = b;
+					if (c < d && c < e)
+					{
+						three = c;
+						if (d < e)
+						{
+							four = d;
+							five = e;							
+						}
+						else
+						{
+							four = e;
+							five = d;
+						}
+					}
+					else if (d < c && d < e)
+					{
+						three = d;
+						if (c < e)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+					else if (e < c && e < d)
+					{
+						three = e;
+						if (c < d)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+				}
+				else if (c < b && c < d && c < e)
+				{
+					two = c;
+					if (b < d && b < e)
+					{
+						three = b;
+						if (d < e)
+						{
+							four = d;
+							five = e;
+						}
+						else if (e < d)
+						{
+							four = e;
+							five = d;
+						}
+					}
+				}
+			}
 		}
+		std::cout << one << "," << two << "," << three << "," << four << "," << five << std::endl;
 
 		//4.)
 

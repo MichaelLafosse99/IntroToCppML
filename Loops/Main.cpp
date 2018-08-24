@@ -33,23 +33,127 @@ int main()
 	}
 
 	//Exercises
+	char pr;
 
-	//1.) - part 1
+	std::cout << "Which Number do you want to run?" << std::endl;
+	std::cout << "1.) 2.) 3.) 4.)" << std::endl;
+	std::cin >> pr;
 
-	for (int e = 100; e >= 0; e--)
+	switch (pr)
 	{
-		std::cout << e << std::endl;
-	}
 
-	// part 2
-
-	for (int e = 100; e >= 0; e--)
+	case '1':
 	{
-		if (e < 100)
+		//1.) - part 1
+
+		std::cout << std::endl;
+		std::cout << "Part 1" << std::endl;
+		std::cout << std::endl;
+
+		for (int e = 100; e >= 0; e--)
+		{
+			std::cout << e << std::endl;
+		}
+
+		std::cout << std::endl;
+
+		// part 2
+
+		std::cout << std::endl;
+		std::cout << "Part 2" << std::endl;
+		std::cout << std::endl;
+
+		for (int e = 100; e >= 0; e--)
+		{
+			if (e < 100)
+			{
+				std::cout << e << std::endl;
+			}
+		}
+
+		std::cout << std::endl;
+
+		// part 3
+
+		std::cout << std::endl;
+		std::cout << "Part 3" << std::endl;
+		std::cout << std::endl;
+
+		for (int e = 100; e >= 0; e--)
+		{
+			if (e < 100 && e > 0)
+			{
+				std::cout << e << std::endl;
+			}
+		}
+
+		// part 4
+
+		std::cout << std::endl;
+		std::cout << "Part 4" << std::endl;
+		std::cout << std::endl;
+
+		for (int e = 100; e >= 0; e -= 2)
 		{
 			std::cout << e << std::endl;
 		}
 	}
+	break;
 
+	case '2':
+	{
+
+		//2.)
+
+		std::cout << std::endl;
+		std::cout << "2" << std::endl;
+		std::cout << std::endl;
+
+		for (int i = 0; i <= 100; i++)
+		{
+			if (i % 3 == 0 && i % 5 == 0)
+			{
+				std::cout << "FizzBuzz" << std::endl;
+			}
+			else if (i % 3 == 0)
+			{
+				std::cout << "Fizz" << std::endl;
+			}
+			else if (i % 5 == 0)
+			{
+				std::cout << "Buzz" << std::endl;
+			}
+			else
+			{
+				std::cout << i << std::endl;
+			}
+		}
+		break;
+
+	case '3':
+	{
+
+		//3.) - Project Eula Problem:
+
+		std::cout << std::endl;
+		std::cout << "Project Eula Problem: " << std::endl;
+		std::cout << std::endl;
+		
+		int sum;
+		sum = 0;
+
+		for (int i = 0; i <= 1000; i++)
+		{ 
+			if (i % 3 == 0 || i % 5 == 0)
+			{
+
+				sum += i;
+			}
+		}
+		std::cout << sum;
+	}
+	}
+
+	}
 	system("pause");
 }
