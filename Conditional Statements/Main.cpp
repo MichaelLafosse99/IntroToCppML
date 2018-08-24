@@ -47,6 +47,7 @@ int main()
 	case '2':
 	{
 		int input = 0;
+		std::cout << "FizzBuzz" << std::endl;
 		std::cout << "Enter a number." << std::endl;
 		std::cin >> input;
 		//This if statement is having the user input a number, if it's a multiple of 3, 5, or both
@@ -75,6 +76,7 @@ int main()
 		float lhs = 0.0f;
 		float rhs = 0.0f;
 		char op;
+		std::cout << "Add or Subtract" << std::endl;
 		std::cout << "Input Two Numbers: " << std::endl;
 		std::cin >> lhs >> rhs;
 		std::cout << "Do You want to Add Or Subtract?" << std::endl;
@@ -169,25 +171,9 @@ int main()
 		std::cout << "Enter five different numbers: " << std::endl;
 		std::cin >> a >> b >> c >> d >> e;
 
-		if (a > b && a > c && a > d && a > e)
+		if (a > b && a > c && a > d && a > e && sum > 0)
 		{
-			if (b > c && b > d && b > e)
-			{
-				if (c > d && c > e)
-				{
-					if (d > e)
-					{
-						if (sum > 0)
-						{
-							std::cout << a << "," << b << "," << c << "," << d << "," << e << std::endl;
-						}
-						else if (sum < 0)
-						{
-							std::cout << e << "," << d << "," << c << "," << b << "," << a << std::endl;
-						}
-					}
-				}
-			}
+			std::cout << a << "," << b << "," << c << "," << d << "," << e << std::endl;
 		}
 
 		//4.)
@@ -238,7 +224,7 @@ int main()
 		std::cout << "Do You want to Add, Subtract, Multiply, Divide, or Mod?" << std::endl;
 		std::cin >> op;
 		//The switch is allowing the program to break off and continue to the function depending on the
-		//user's input, + or -.
+		//user's input, +, -, *, or /.
 		switch (op)
 		{
 		case '+':
