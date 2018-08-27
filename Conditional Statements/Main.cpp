@@ -160,7 +160,7 @@ int main()
 		}
 
 		//3.)
-		//Not finished need more help
+		//Not finished
 		int a = 0;
 		int b = 0;
 		int c = 0;
@@ -177,7 +177,7 @@ int main()
 		std::cin >> a >> b >> c >> d >> e;
 		sum = a + b + c + d + e;
 
-
+		//This prints out the inputted numbers in ascending order
 
 		if (sum > 0)
 		{
@@ -241,17 +241,1858 @@ int main()
 							four = d;
 							five = e;
 						}
-						else if (e < d)
+						else
 						{
 							four = e;
 							five = d;
 						}
 					}
+					else if (d < b && d < e)
+					{
+						three = d;
+						if (b < e)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+					else if (e < b && e < d)
+					{
+						three = e;
+						if (b < d)
+						{
+							four = b;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+				}
+				else if (d < b && d < c && d < e)
+				{
+					two = d;
+					if (b < c && b << e)
+					{
+						three = b;
+						if (c < e)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+					else if (c < b && c < e)
+					{
+						three = c;
+						if (b < e)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+					else if (e < b && e < c)
+					{
+						three = e;
+						if (b < c)
+						{
+							four = b;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = b;
+						}
+					}
+				}
+				else if (e < b && e < c && e < d)
+				{
+					two = e;
+					if (b < c && b < d)
+					{
+						three = b;
+						{
+							if (c < d)
+							{
+								four = c;
+								five = d;
+							}
+							else
+							{
+								four = d;
+								five = c;
+							}
+						}
+					}
+					else if (c < b && c < d)
+					{
+						three = c;
+						if (b < d)
+						{
+							four = b;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+					else if (d < b && d < c)
+					{
+						three = d;
+						if (b < c)
+						{
+							four = b;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = b;
+						}
+					}
+				}
+			}
+			else if (b < a && b < c && b < d && b < e)
+			{
+				one = b;
+				if (a < c && a < d && a < e)
+				{
+					two = a;
+					if (c < d && c < e)
+					{
+						three = c;
+						if (d < e)
+						{
+							four = d;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = d;
+						}
+					}
+					else if (d < c && d < e)
+					{
+						three = d;
+						if (c < e)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+					else if (e < c && e < d)
+					{
+						three = e;
+						if (c < d)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+				}
+				else if (c < b && c < d && c < e)
+				{
+					two = c;
+					if (a < d && a < e)
+					{
+						three = a;
+						if (d < e)
+						{
+							four = d;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = d;
+						}
+					}
+					else if (d < a && d < e)
+					{
+						three = d;
+						if (a < e)
+						{
+							four = a;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = a;
+						}
+					}
+					else if (e < a && e < d)
+					{
+						three = e;
+						if (a < d)
+						{
+							four = a;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = a;
+						}
+					}
+				}
+				else if (d < a && d < c && d < e)
+				{
+					two = d;
+					if (a < c && a < e)
+					{
+						three = a;
+						if (c < e)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+					else if (c < a && c < e)
+					{
+						three = c;
+						if (a < e)
+						{
+							four = a;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = a;
+						}
+					}
+					else if (e < a && e < c)
+					{
+						three = e;
+						if (a < c)
+						{
+							four = a;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = a;
+						}
+					}
+				}
+				else if (e < a && e < c && e < d)
+				{
+					two = e;
+					if (a < c && a < d)
+					{
+						three = a;
+						{
+							if (c < d)
+							{
+								four = c;
+								five = d;
+							}
+							else
+							{
+								four = d;
+								five = c;
+							}
+						}
+					}
+					else if (c < a && c < d)
+					{
+						three = c;
+						if (a < d)
+						{
+							four = a;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+					else if (d < a && d < c)
+					{
+						three = d;
+						if (a < c)
+						{
+							four = a;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = a;
+						}
+					}
+				}
+			}
+			else if (c < a && c < b && c < d && c < e)
+			{
+				one = c;
+				if (a < b && a < d && a < e)
+				{
+					two = a;
+					if (b < d && c < e)
+					{
+						three = b;
+						if (d < e)
+						{
+							four = d;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = d;
+						}
+					}
+					else if (d < b && d < e)
+					{
+						three = d;
+						if (b < e)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+					else if (e < b && e < d)
+					{
+						three = e;
+						if (b < d)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+				}
+				else if (b < a && c < d && c < e)
+				{
+					two = b;
+					if (a < d && a < e)
+					{
+						three = a;
+						if (d < e)
+						{
+							four = d;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = d;
+						}
+					}
+					else if (d < a && d < e)
+					{
+						three = d;
+						if (a < e)
+						{
+							four = a;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = a;
+						}
+					}
+					else if (e < a && e < d)
+					{
+						three = e;
+						if (a < d)
+						{
+							four = a;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = a;
+						}
+					}
+				}
+				else if (d < a && d < b && d < e)
+				{
+					two = d;
+					if (a < b && a < e)
+					{
+						three = a;
+						if (b < e)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+					else if (b < a && b < e)
+					{
+						three = b;
+						if (a < e)
+						{
+							four = a;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = a;
+						}
+					}
+					else if (e < a && e < b)
+					{
+						three = e;
+						if (a < b)
+						{
+							four = a;
+							five = b;
+						}
+						else
+						{
+							four = b;
+							five = a;
+						}
+					}
+				}
+				else if (e < a && e < b && e < d)
+				{
+					two = e;
+					if (a < b && a < d)
+					{
+						three = a;
+						{
+							if (b < d)
+							{
+								four = b;
+								five = d;
+							}
+							else
+							{
+								four = d;
+								five = b;
+							}
+						}
+					}
+					else if (b < a && b < d)
+					{
+						three = b;
+						if (a < d)
+						{
+							four = a;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+					else if (d < a && d < b)
+					{
+						three = d;
+						if (a < b)
+						{
+							four = a;
+							five = b;
+						}
+						else
+						{
+							four = b;
+							five = a;
+						}
+					}
+				}
+			}
+			else if (d < a && d < b && d < c && d < e)
+			{
+				one = d;
+				if (a < b && a < c && a < e)
+				{
+					two = a;
+					if (b < c && b < e)
+					{
+						three = b;
+						if (c < e)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+					else if (c < b && c < e)
+					{
+						three = c;
+						if (b < e)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+					else if (e < b && e < c)
+					{
+						three = e;
+						if (b < c)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+				}
+				else if (b < a && b < c && b < e)
+				{
+					two = b;
+					if (a < d && a < e)
+					{
+						three = a;
+						if (c < e)
+						{
+							four = c;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = c;
+						}
+					}
+					else if (c < a && c < e)
+					{
+						three = c;
+						if (a < e)
+						{
+							four = a;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = a;
+						}
+					}
+					else if (e < a && e < c)
+					{
+						three = e;
+						if (a < c)
+						{
+							four = a;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = a;
+						}
+					}
+				}
+				else if (c < a && c < b && c < e)
+				{
+					two = c;
+					if (a < b && a < e)
+					{
+						three = a;
+						if (b < e)
+						{
+							four = b;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = b;
+						}
+					}
+					else if (b < a && b < e)
+					{
+						three = b;
+						if (a < e)
+						{
+							four = a;
+							five = e;
+						}
+						else
+						{
+							four = e;
+							five = a;
+						}
+					}
+					else if (e < a && e < b)
+					{
+						three = e;
+						if (a < b)
+						{
+							four = a;
+							five = b;
+						}
+						else
+						{
+							four = b;
+							five = a;
+						}
+					}
+				}
+				else if (e < a && e < b && e < c)
+				{
+					two = e;
+					if (a < b && a < c)
+					{
+						three = a;
+						{
+							if (b < c)
+							{
+								four = b;
+								five = c;
+							}
+							else
+							{
+								four = c;
+								five = b;
+							}
+						}
+					}
+					else if (b < a && b < c)
+					{
+						three = b;
+						if (a < c)
+						{
+							four = a;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = b;
+						}
+					}
+					else if (c < a && c < b)
+					{
+						three = c;
+						if (a < b)
+						{
+							four = a;
+							five = b;
+						}
+						else
+						{
+							four = b;
+							five = a;
+						}
+					}
+				}
+			}
+			else if (e < a && e < b && e < c && e < d)
+			{
+				one = e;
+				if (a < b && a < c && a < d)
+				{
+					two = a;
+					if (b < c && b < d)
+					{
+						three = b;
+						if (c < d)
+						{
+							four = c;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = c;
+						}
+					}
+					else if (c < b && c < d)
+					{
+						three = c;
+						if (b < d)
+						{
+							four = b;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+					else if (e < b && d < c)
+					{
+						three = d;
+						if (b < c)
+						{
+							four = b;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+				}
+				else if (b < a && b < c && b < d)
+				{
+					two = b;
+					if (a < d && a < d)
+					{
+						three = a;
+						if (c < d)
+						{
+							four = c;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = c;
+						}
+					}
+					else if (c < a && c < d)
+					{
+						three = c;
+						if (a < d)
+						{
+							four = a;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = a;
+						}
+					}
+					else if (d < a && d < c)
+					{
+						three = d;
+						if (a < c)
+						{
+							four = a;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = a;
+						}
+					}
+				}
+				else if (c < a && c < b && c < d)
+				{
+					two = c;
+					if (a < b && a < d)
+					{
+						three = a;
+						if (b < d)
+						{
+							four = b;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+					else if (b < a && b < d)
+					{
+						three = b;
+						if (a < d)
+						{
+							four = a;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = a;
+						}
+					}
+					else if (e < a && d < b)
+					{
+						three = d;
+						if (a < b)
+						{
+							four = a;
+							five = b;
+						}
+						else
+						{
+							four = b;
+							five = a;
+						}
+					}
+				}
+				else if (d < a && d < b && d < c)
+				{
+					two = d;
+					if (a < b && a < c)
+					{
+						three = a;
+						{
+							if (b < c)
+							{
+								four = b;
+								five = c;
+							}
+							else
+							{
+								four = c;
+								five = b;
+							}
+						}
+					}
+					else if (b < a && b < c)
+					{
+						three = b;
+						if (a < c)
+						{
+							four = a;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = b;
+						}
+					}
+					else if (c < a && c < b)
+					{
+						three = c;
+						if (a < b)
+						{
+							four = a;
+							five = b;
+						}
+						else
+						{
+							four = b;
+							five = a;
+						}
+					}
+				}
+			}
+			std::cout << one << "," << two << "," << three << "," << four << "," << five << std::endl;
+		}
+		//This prints them out in descending order
+		else if (sum < 0)
+		{
+			if (a < b && a < c && a < d && a < e)
+		{
+			one = a;
+			if (b < c && b < d && b < e)
+			{
+				two = b;
+				if (c < d && c < e)
+				{
+					three = c;
+					if (d < e)
+					{
+						four = d;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = d;
+					}
+				}
+				else if (d < c && d < e)
+				{
+					three = d;
+					if (c < e)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+				else if (e < c && e < d)
+				{
+					three = e;
+					if (c < d)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+			}
+			else if (c < b && c < d && c < e)
+			{
+				two = c;
+				if (b < d && b < e)
+				{
+					three = b;
+					if (d < e)
+					{
+						four = d;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = d;
+					}
+				}
+				else if (d < b && d < e)
+				{
+					three = d;
+					if (b < e)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+				else if (e < b && e < d)
+				{
+					three = e;
+					if (b < d)
+					{
+						four = b;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+			}
+			else if (d < b && d < c && d < e)
+			{
+				two = d;
+				if (b < c && b << e)
+				{
+					three = b;
+					if (c < e)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+				else if (c < b && c < e)
+				{
+					three = c;
+					if (b < e)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+				else if (e < b && e < c)
+				{
+					three = e;
+					if (b < c)
+					{
+						four = b;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = b;
+					}
+				}
+			}
+			else if (e < b && e < c && e < d)
+			{
+				two = e;
+				if (b < c && b < d)
+				{
+					three = b;
+					{
+						if (c < d)
+						{
+							four = c;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = c;
+						}
+					}
+				}
+				else if (c < b && c < d)
+				{
+					three = c;
+					if (b < d)
+					{
+						four = b;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+				else if (d < b && d < c)
+				{
+					three = d;
+					if (b < c)
+					{
+						four = b;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = b;
+					}
 				}
 			}
 		}
-		std::cout << one << "," << two << "," << three << "," << four << "," << five << std::endl;
-
+			else if (b < a && b < c && b < d && b < e)
+		{
+			one = b;
+			if (a < c && a < d && a < e)
+			{
+				two = a;
+				if (c < d && c < e)
+				{
+					three = c;
+					if (d < e)
+					{
+						four = d;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = d;
+					}
+				}
+				else if (d < c && d < e)
+				{
+					three = d;
+					if (c < e)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+				else if (e < c && e < d)
+				{
+					three = e;
+					if (c < d)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+			}
+			else if (c < b && c < d && c < e)
+			{
+				two = c;
+				if (a < d && a < e)
+				{
+					three = a;
+					if (d < e)
+					{
+						four = d;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = d;
+					}
+				}
+				else if (d < a && d < e)
+				{
+					three = d;
+					if (a < e)
+					{
+						four = a;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = a;
+					}
+				}
+				else if (e < a && e < d)
+				{
+					three = e;
+					if (a < d)
+					{
+						four = a;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = a;
+					}
+				}
+			}
+			else if (d < a && d < c && d < e)
+			{
+				two = d;
+				if (a < c && a < e)
+				{
+					three = a;
+					if (c < e)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+				else if (c < a && c < e)
+				{
+					three = c;
+					if (a < e)
+					{
+						four = a;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = a;
+					}
+				}
+				else if (e < a && e < c)
+				{
+					three = e;
+					if (a < c)
+					{
+						four = a;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = a;
+					}
+				}
+			}
+			else if (e < a && e < c && e < d)
+			{
+				two = e;
+				if (a < c && a < d)
+				{
+					three = a;
+					{
+						if (c < d)
+						{
+							four = c;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = c;
+						}
+					}
+				}
+				else if (c < a && c < d)
+				{
+					three = c;
+					if (a < d)
+					{
+						four = a;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+				else if (d < a && d < c)
+				{
+					three = d;
+					if (a < c)
+					{
+						four = a;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = a;
+					}
+				}
+			}
+		}
+			else if (c < a && c < b && c < d && c < e)
+		{
+			one = c;
+			if (a < b && a < d && a < e)
+			{
+				two = a;
+				if (b < d && c < e)
+				{
+					three = b;
+					if (d < e)
+					{
+						four = d;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = d;
+					}
+				}
+				else if (d < b && d < e)
+				{
+					three = d;
+					if (b < e)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+				else if (e < b && e < d)
+				{
+					three = e;
+					if (b < d)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+			}
+			else if (b < a && c < d && c < e)
+			{
+				two = b;
+				if (a < d && a < e)
+				{
+					three = a;
+					if (d < e)
+					{
+						four = d;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = d;
+					}
+				}
+				else if (d < a && d < e)
+				{
+					three = d;
+					if (a < e)
+					{
+						four = a;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = a;
+					}
+				}
+				else if (e < a && e < d)
+				{
+					three = e;
+					if (a < d)
+					{
+						four = a;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = a;
+					}
+				}
+			}
+			else if (d < a && d < b && d < e)
+			{
+				two = d;
+				if (a < b && a < e)
+				{
+					three = a;
+					if (b < e)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+				else if (b < a && b < e)
+				{
+					three = b;
+					if (a < e)
+					{
+						four = a;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = a;
+					}
+				}
+				else if (e < a && e < b)
+				{
+					three = e;
+					if (a < b)
+					{
+						four = a;
+						five = b;
+					}
+					else
+					{
+						four = b;
+						five = a;
+					}
+				}
+			}
+			else if (e < a && e < b && e < d)
+			{
+				two = e;
+				if (a < b && a < d)
+				{
+					three = a;
+					{
+						if (b < d)
+						{
+							four = b;
+							five = d;
+						}
+						else
+						{
+							four = d;
+							five = b;
+						}
+					}
+				}
+				else if (b < a && b < d)
+				{
+					three = b;
+					if (a < d)
+					{
+						four = a;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+				else if (d < a && d < b)
+				{
+					three = d;
+					if (a < b)
+					{
+						four = a;
+						five = b;
+					}
+					else
+					{
+						four = b;
+						five = a;
+					}
+				}
+			}
+		}
+			else if (d < a && d < b && d < c && d < e)
+		{
+			one = d;
+			if (a < b && a < c && a < e)
+			{
+				two = a;
+				if (b < c && b < e)
+				{
+					three = b;
+					if (c < e)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+				else if (c < b && c < e)
+				{
+					three = c;
+					if (b < e)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+				else if (e < b && e < c)
+				{
+					three = e;
+					if (b < c)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+			}
+			else if (b < a && b < c && b < e)
+			{
+				two = b;
+				if (a < d && a < e)
+				{
+					three = a;
+					if (c < e)
+					{
+						four = c;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = c;
+					}
+				}
+				else if (c < a && c < e)
+				{
+					three = c;
+					if (a < e)
+					{
+						four = a;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = a;
+					}
+				}
+				else if (e < a && e < c)
+				{
+					three = e;
+					if (a < c)
+					{
+						four = a;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = a;
+					}
+				}
+			}
+			else if (c < a && c < b && c < e)
+			{
+				two = c;
+				if (a < b && a < e)
+				{
+					three = a;
+					if (b < e)
+					{
+						four = b;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = b;
+					}
+				}
+				else if (b < a && b < e)
+				{
+					three = b;
+					if (a < e)
+					{
+						four = a;
+						five = e;
+					}
+					else
+					{
+						four = e;
+						five = a;
+					}
+				}
+				else if (e < a && e < b)
+				{
+					three = e;
+					if (a < b)
+					{
+						four = a;
+						five = b;
+					}
+					else
+					{
+						four = b;
+						five = a;
+					}
+				}
+			}
+			else if (e < a && e < b && e < c)
+			{
+				two = e;
+				if (a < b && a < c)
+				{
+					three = a;
+					{
+						if (b < c)
+						{
+							four = b;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = b;
+						}
+					}
+				}
+				else if (b < a && b < c)
+				{
+					three = b;
+					if (a < c)
+					{
+						four = a;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = b;
+					}
+				}
+				else if (c < a && c < b)
+				{
+					three = c;
+					if (a < b)
+					{
+						four = a;
+						five = b;
+					}
+					else
+					{
+						four = b;
+						five = a;
+					}
+				}
+			}
+		}
+			else if (e < a && e < b && e < c && e < d)
+		{
+			one = e;
+			if (a < b && a < c && a < d)
+			{
+				two = a;
+				if (b < c && b < d)
+				{
+					three = b;
+					if (c < d)
+					{
+						four = c;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = c;
+					}
+				}
+				else if (c < b && c < d)
+				{
+					three = c;
+					if (b < d)
+					{
+						four = b;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+				else if (e < b && d < c)
+				{
+					three = d;
+					if (b < c)
+					{
+						four = b;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+			}
+			else if (b < a && b < c && b < d)
+			{
+				two = b;
+				if (a < d && a < d)
+				{
+					three = a;
+					if (c < d)
+					{
+						four = c;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = c;
+					}
+				}
+				else if (c < a && c < d)
+				{
+					three = c;
+					if (a < d)
+					{
+						four = a;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = a;
+					}
+				}
+				else if (d < a && d < c)
+				{
+					three = d;
+					if (a < c)
+					{
+						four = a;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = a;
+					}
+				}
+			}
+			else if (c < a && c < b && c < d)
+			{
+				two = c;
+				if (a < b && a < d)
+				{
+					three = a;
+					if (b < d)
+					{
+						four = b;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = b;
+					}
+				}
+				else if (b < a && b < d)
+				{
+					three = b;
+					if (a < d)
+					{
+						four = a;
+						five = d;
+					}
+					else
+					{
+						four = d;
+						five = a;
+					}
+				}
+				else if (e < a && d < b)
+				{
+					three = d;
+					if (a < b)
+					{
+						four = a;
+						five = b;
+					}
+					else
+					{
+						four = b;
+						five = a;
+					}
+				}
+			}
+			else if (d < a && d < b && d < c)
+			{
+				two = d;
+				if (a < b && a < c)
+				{
+					three = a;
+					{
+						if (b < c)
+						{
+							four = b;
+							five = c;
+						}
+						else
+						{
+							four = c;
+							five = b;
+						}
+					}
+				}
+				else if (b < a && b < c)
+				{
+					three = b;
+					if (a < c)
+					{
+						four = a;
+						five = c;
+					}
+					else
+					{
+						four = c;
+						five = b;
+					}
+				}
+				else if (c < a && c < b)
+				{
+					three = c;
+					if (a < b)
+					{
+						four = a;
+						five = b;
+					}
+					else
+					{
+						four = b;
+						five = a;
+					}
+				}
+			}
+		}
+			std::cout << five << "," << four << "," << three << "," << two << "," << one << std::endl;
+		}
+		//This prints out the numbers in the order they were put in
+		if (sum == 0)
+		{
+			std::cout << a << "," << b << "," << c << "," << d << "," << e << std::endl;
+		}
 		//4.)
 
 		char pe;
