@@ -149,7 +149,7 @@ int main()
 		int sum;
 		sum = 0;
 
-		//The reason why this loop works is becuase,
+		//The reason why this loop works is because,
 		//everytime a number is a multiple of 3 or 5,
 		//it takes that value, and adds it with all of the other
 		//multiple numbers. (sum)
