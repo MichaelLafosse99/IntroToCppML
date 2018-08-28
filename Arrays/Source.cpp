@@ -120,7 +120,10 @@ int main()
 	{
 		std::cout << numbers[i] << " ";
 	}
-	
+
+	std::cout << std::endl;
+	std::cout << std::endl;
+
 	//5.)
 
 	std::cout << "Input ten numbers" << std::endl;
@@ -136,10 +139,92 @@ int main()
 		{
 			if (values[i] < values[j])
 			{
-				
+				int temp = values[i];
+				values[i] = values[j];
+				values[j] = temp;
 			}
 		}
+		
 	}
+
+	std::cout << values[9] << " " << values[0] << std::endl;
+	std::cout << std::endl;
+
+	//6.)
+
+	int small[3][3];
+	int taco = 1;
+
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			small[i][j] = taco;
+			taco++;
+		}
+	}
+
+	for (int i = 0; i < 3; i++)
+	{
+		std::cout << small[0][i];
+	}
+
+	std::cout << std::endl;
+
+	for (int i = 0; i < 3; i++)
+	{
+		std::cout << small[1][i];
+	}
+
+	std::cout << std::endl;
+
+	for (int i = 0; i < 3; i++)
+	{
+		std::cout << small[2][i];
+	}
+
+	std::cout << std::endl;
+
+	//7.)
+
+	int big[29][5];
+	int sumRow[29];
+	int sumCol[5];
+	int sum;
+	int num = 0;
+
+	for (int i = 0; i < 29; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			big[i][j] = num;
+			num++;
+		}
+	}
+	//This is finding the sum of each column
+	//Looping thru each row in the first column
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 29; j++)
+		{
+			sum += big[j][i];
+		}
+		sumCol[i] = sum;
+		sum = 0;
+	}
+	//This is finding the sum of each row
+	//Looping thru each column in the first row
+	for (int i = 0; i < 29; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			sum += big[i][j];
+		}
+		sumRow[i] = sum;
+		sum = 0;
+	}
+
+	
 
 	system ("pause");
 }
