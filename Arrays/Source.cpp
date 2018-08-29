@@ -191,7 +191,7 @@ int main()
 	int sumRow[29];
 	int sumCol[5];
 	int sum;
-	int value = 0;
+	int value = 1;
 
 	for (int i = 0; i < 29; i++)
 	{
@@ -227,6 +227,12 @@ int main()
 	for (int i = 0; i < 29; i++)
 	{
 		std::cout << sumRow[i] << std::endl;
+	}
+	std::cout << std::endl;
+
+	for (int i = 0; i < 5; i++)
+	{
+		std::cout << sumCol[i] << std::endl;
 	}
 	std::cout << std::endl;
 	system ("pause");
