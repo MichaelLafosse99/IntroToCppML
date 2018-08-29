@@ -184,21 +184,21 @@ int main()
 	}
 
 	std::cout << std::endl;
-
+	std::cout << std::endl;
 	//7.)
 
 	int big[29][5];
 	int sumRow[29];
 	int sumCol[5];
 	int sum;
-	int num = 0;
+	int value = 0;
 
 	for (int i = 0; i < 29; i++)
 	{
 		for (int j = 0; j < 5; j++)
 		{
-			big[i][j] = num;
-			num++;
+			big[i][j] = value;
+			value++;
 		}
 	}
 	//This is finding the sum of each column
@@ -223,8 +223,11 @@ int main()
 		sumRow[i] = sum;
 		sum = 0;
 	}
-
 	
-
+	for (int i = 0; i < 29; i++)
+	{
+		std::cout << sumRow[i] << std::endl;
+	}
+	std::cout << std::endl;
 	system ("pause");
 }
