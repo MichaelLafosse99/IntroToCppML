@@ -62,5 +62,27 @@ int main()
 
 	std::cout << same << std::endl;
 
+	//Exercises
+	{
+		//1.)
+
+		char stuff[255];
+
+		std::cout << "Enter Your Name." << std::endl;
+		std::cin.getline(stuff, 255);
+		//Not needed to print:
+		std::cout << "Your Name Is:" << std::endl;
+		std::cout << stuff << std::endl;
+
+		//2.)
+		int count = 0;
+
+		for (int i = 0; i < 255; i++)
+		{
+
+		}
+
+	}
+
 	system("pause");
 }

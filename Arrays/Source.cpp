@@ -97,14 +97,15 @@ int main()
 	//e)-858993460
 
 	//3.)
+	int data[10];
 
-	int data[10] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-
-	for (int i = 0; i < 10; i++)
+	for (int i = 10; i > 0; i--)
 	{
-		std::cout << data[i] << std::endl;
+		data[i - 1] = i;
+		std::cout << i << " ";
+		
 	}
-
+	std::cout << std::endl;
 	//4.)
 
 	int numbers[5];
