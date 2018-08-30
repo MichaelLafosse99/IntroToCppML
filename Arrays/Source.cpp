@@ -191,7 +191,7 @@ int main()
 	int big[29][5];
 	int sumRow[29];
 	int sumCol[5];
-	int sum;
+	int sum = 0;
 	int value = 1;
 
 	for (int i = 0; i < 29; i++)
