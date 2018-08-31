@@ -27,6 +27,7 @@ int main()
 
 	}
 
+	std::cout << std::endl;
 	//1. create myarray of size 5 with the following value (12, 21, 3, 7, 13)
 	//2. Iterate over the array
 	//3. compare each value to every other value to see if it's greater than or less than
@@ -75,6 +76,8 @@ int main()
 		}
 	}
 
+	std::cout << std::endl;
+
 	//Exercises
 
 	//1.)
@@ -105,7 +108,10 @@ int main()
 		std::cout << i << " ";
 		
 	}
+
 	std::cout << std::endl;
+	std::cout << std::endl;
+
 	//4.)
 
 	int numbers[5];
@@ -235,6 +241,58 @@ int main()
 	{
 		std::cout << sumCol[i] << std::endl;
 	}
+
+	//8.)
+
 	std::cout << std::endl;
+
+	int health[5] = { 100, 100, 100, 100, 100 };
+	int input;
+
+	std::cout << "Which Character Is To Be Attacked?" << std::endl;
+	std::cout << " 1.) 2.) 3.) 4.) 5.)" << std::endl;
+	
+
+	for (int i = 0; i < 5; i++)
+	{
+		std::cin >> input;
+
+		if (input > 0 && input < 6)
+		{
+			if (health[input - 1] <=0)
+			{
+				std::cout << "This character is dead.." << std::endl;
+				i--;
+			}
+			else
+			{
+				if (health[input - 1] > 40)
+				{
+					health[input - 1] = health[input - 1] - 40;
+					std::cout << health[input - 1] << std::endl;
+				}
+				else
+				{
+					health[input - 1] = 0;
+					std::cout << "This character is dead..." << std::endl;
+				}
+
+			}
+			
+			
+		}
+		else
+		{
+			std::cout << "You have to choose a valid character, you can't damage yourself..." << std::endl;
+
+			i--;
+		}
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+		std::cout << health[i] << "," << std::endl;
+	}
+	
 	system ("pause");
 }

@@ -70,7 +70,9 @@ int main()
 
 		std::cout << "Enter Your Name." << std::endl;
 		std::cin.getline(stuff, 255);
-		//Not needed to print:
+
+		//Do not need to print
+
 		std::cout << "Your Name Is:" << std::endl;
 		std::cout << stuff << std::endl;
 
