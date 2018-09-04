@@ -294,5 +294,13 @@ int main()
 		std::cout << health[i] << "," << std::endl;
 	}
 	
+	//9.)
+
+	int food[3][7];
+	int dragons[3];
+	int days[7];
+
+
+
 	system ("pause");
 }
