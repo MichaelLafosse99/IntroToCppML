@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 int print(std::string words)
 {
@@ -81,6 +82,25 @@ void RevArray(int arr[], int size)
 	std::cout << std::endl;
 }
 
+int cointToss(int num)
+{
+	int input = 0;
+	num = rand();
+
+	std::cout << "How many times do you want to flip the coin?" << std::endl;
+	std::cin >> input;
+
+	if (num % 2 == 0)
+	{
+		std::cout << "Heads" << std::endl;
+	}
+	else if (num !% 2 == 0)
+	{
+		std::cout << "Tails" << std::endl;
+	}
+}
+
+
 int main()
 {
 	print("This \n");
@@ -110,9 +130,9 @@ int main()
 
 	//Homework
 
-	//1.)
+	//5.)
 
-
+	
 
 	system("pause");
 }
