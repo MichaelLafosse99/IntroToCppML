@@ -181,7 +181,7 @@ int main()
 		}
 
 		//6.)
-
+		//don't know how to start
 
 
 		//7.)
