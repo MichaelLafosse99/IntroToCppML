@@ -2,13 +2,26 @@
 
 //1.)
 
-int fibSeq(int num)
+int fibSeq(int number)
 {
-	if (num != 1 && num != 0)
-	{
-		return fibSeq(num - 1) + fibSeq(num - 2);
-	}
+	int num1 = 0;
+	int num2 = 1;
 
+	for (int i = 0; i < number; i++)
+	{
+		if (i == 0)
+		{
+			std::cout << num2 << " ";
+		}
+		else
+		{
+			int num3 = num1 + num2;
+			num1 = num2;
+			num2 = num3;
+			std::cout << num3 << " ";
+		}
+	}
+	return 0;
 }
 
 //2.)
@@ -31,8 +44,9 @@ int main()
 {
 
 	//1.)
-	//Only printing the final number
-	std::cout << fibSeq(8);
+
+	fibSeq(8);
+	std::cout << std::endl;
 	std::cout << std::endl;
 
 	//2.)
