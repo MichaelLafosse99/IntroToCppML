@@ -141,10 +141,13 @@ int power(int x, int y)
 
 //16.)
 
-//int lookSay(int arr[], int size)
-//{
-//
-//}
+int lookSay(int arr[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+
+	}
+}
 
 //17.)
 
@@ -259,7 +262,9 @@ int main()
 	power(2, 4);
 
 	//16.)
+	int look[6] = { 1,1,2,2,3,3 };
 
+	lookSay(look, 6);
 
 	//17.)
 
