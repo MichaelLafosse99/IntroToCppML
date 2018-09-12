@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntroToCppML", "IntroToCppML\IntroToCppML.vcxproj", "{30FB67ED-C71A-4663-B137-7CC8B0C689D5}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recursive Functions", "Recursion\Recursion.vcxproj", "{CCFC3095-9B3E-4EA0-BE12-B64BFA842D30}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Structures", "Structures\Structures.vcxproj", "{F8278E22-0DA1-4CA0-BD6A-9772B511C6A7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and Memory", "Pointers and Memory\Pointers and Memory.vcxproj", "{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,14 @@ Global
 		{F8278E22-0DA1-4CA0-BD6A-9772B511C6A7}.Release|x64.Build.0 = Release|x64
 		{F8278E22-0DA1-4CA0-BD6A-9772B511C6A7}.Release|x86.ActiveCfg = Release|Win32
 		{F8278E22-0DA1-4CA0-BD6A-9772B511C6A7}.Release|x86.Build.0 = Release|Win32
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Debug|x64.ActiveCfg = Debug|x64
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Debug|x64.Build.0 = Debug|x64
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Debug|x86.ActiveCfg = Debug|Win32
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Debug|x86.Build.0 = Debug|Win32
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Release|x64.ActiveCfg = Release|x64
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Release|x64.Build.0 = Release|x64
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Release|x86.ActiveCfg = Release|Win32
+		{FEBA4413-BB49-4D6D-BE89-EBAE93FC3608}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
