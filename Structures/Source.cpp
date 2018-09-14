@@ -87,8 +87,8 @@ int main()
 
 	//The store's item name
 	sword.name = "Excalibur";
-	sheild.name = "Big Ass Sheild";
-	food.name = "Potatoe";
+	sheild.name = "Big Sheild";
+	food.name = "Potato";
 
 	//The player's item name
 	playerSword.name = "Rusty old sword";
