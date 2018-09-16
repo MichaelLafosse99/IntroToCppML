@@ -31,11 +31,62 @@ void reverseArray(int *ptr_num, int size)
 	//then last is assigned the value of temp, which is the index of 0 or value 2
 }
 
+//A.
+
+void RevString(char* array)
+{
+	for (int i = 5 - 1; i >= 0; i--)
+	{
+		array[i];
+	}
+}
+
+//B.
+
+int CountEven(int* array, int array_len)
+{
+	for (int i = 0; i < array_len; i++)
+	{
+		int count = 0;
+
+		if (i % 2)
+		{
+			count++;
+			return count;
+		}
+	}
+}
+
+//C.
+
+//int Maximum(double* array, int array_size)
+//{
+//	double *maximum = array;
+//
+//	for (int i = 0; i < array_size; i++)
+//	{
+//		if (array[i] > *maximum)
+//		{
+//			return *array;
+//		}
+//		else if (array[i] = 0)
+//		{
+//			return; *nullptr;
+//		}
+//	}
+//}
+
+//D.
 bool contains(char* array, char search_value)
 {
-	
-
-
+	if (array == &search_value)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
 }
 
 int main()
@@ -52,7 +103,7 @@ int main()
 		ptr++;
 	}
 
-	int num[3] = { 2, 4, 6 };
+	int num[4] = { 2, 4, 6 };
 	int *ptrNum = &num[0];
 
 	reverseArray(ptrNum, 3);
@@ -60,12 +111,33 @@ int main()
 	//Exercises
 
 	//6.)
+
+	//A.
+
+	char string[5] = { "Mike" };
+	char *ptrString = &string[0];
+
+	RevString(ptrString);
+
+	//B.
+
+	int even[4] = { 1, 2, 3, 4 };
+	int *ptrEven = &even[0];
+
+	CountEven(ptrEven, 4);
+
+	//C.
+	//Need Help On
+	//double numb[3] = { 2, 5, 1 };
+	//double*ptrNumb = numb;
+
+	//Maximum(ptrNumb, 3);
+
+	//D.
 	char name[255] = { "Mike" };
-	char *ptrName;
+	char *ptrName = &name[0];
 
-	ptrName = &name[0];
-
-	contains(name, 'M');
+	contains(ptrName, 'M');
 
 	system("pause");
 }
