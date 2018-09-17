@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers and Memory", "Poin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "References", "References\References.vcxproj", "{163EC269-66C2-4265-B51E-99F428C9E4CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Classes", "Classes\Classes.vcxproj", "{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{163EC269-66C2-4265-B51E-99F428C9E4CC}.Release|x64.Build.0 = Release|x64
 		{163EC269-66C2-4265-B51E-99F428C9E4CC}.Release|x86.ActiveCfg = Release|Win32
 		{163EC269-66C2-4265-B51E-99F428C9E4CC}.Release|x86.Build.0 = Release|Win32
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Debug|x64.ActiveCfg = Debug|x64
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Debug|x64.Build.0 = Debug|x64
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Debug|x86.ActiveCfg = Debug|Win32
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Debug|x86.Build.0 = Debug|Win32
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Release|x64.ActiveCfg = Release|x64
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Release|x64.Build.0 = Release|x64
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Release|x86.ActiveCfg = Release|Win32
+		{EBE2D55E-FE13-4FA6-97B7-E4365C2EF251}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
