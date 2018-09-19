@@ -42,6 +42,7 @@ public:
 			pop();
 			std::cout << "Result: " << std::endl;
 			std::cout << values[count - 1];
+			
 		}
 		//if the value is 45, "-", the top of the stack and the index right before it,
 		//are subtracted and print out the result.
@@ -51,6 +52,7 @@ public:
 			pop();
 			std::cout << "Result: " << std::endl;
 			std::cout << values[count - 1];
+			
 		}
 	}
 };
@@ -76,9 +78,8 @@ int main()
 
 	std::cout << "Input as many numbers as you want (preferably two numbers)." << std::endl;
 	std::cout << "After you have entered two numbers, input either a + or a - to add or subtract the two numbers." << std::endl;
-	std::cout << "Once inputting either + or - you have to input them again, mainly because this guy can't program.." << std::endl;
+	std::cout << "Once inputting either + or - you have to input them again." << std::endl;
 	std::cout << "The same thing applies if you input 'q' or 'Q'.." << std::endl;
-	std::cout << "I don't make the instructions, I just state them..." << std::endl;
 	std::cout << std::endl;
 
 	std::cout << "Input: " << std::endl;
@@ -89,6 +90,8 @@ int main()
 	{
 		std::cin >> input;	
 
+		//Basically if the input fails, it puts it through this "do while" loop,
+		//which makes the user input the + or - a second time.
 		if (std::cin.fail())
 			do
 			{
@@ -96,6 +99,7 @@ int main()
 				std::cin.ignore();
 				char op;
 				std::cin >> op;
+				std::cout << std::endl;
 				input = op;
 			} while (std::cin.fail());
 
