@@ -58,13 +58,13 @@ public:
 };
 
 //Function that is supposed to convert char to int.
-void convert(char input)
+int convert(char input)
 {
 	char op = input;
 	input = '+';
 
 	input = (int)op;
-	//std::cout << (int)temp;
+	return (int)op;
 }
 
 int main()
