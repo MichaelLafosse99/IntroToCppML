@@ -1,5 +1,10 @@
 #include "Stack.h"
 
+Stack::Stack()
+{
+	mCount = 0;
+}
+
 Hero Stack::Top()
 {
 	mData[mCount].PrintName();
@@ -14,8 +19,15 @@ bool Stack::Pop()
 
 bool Stack::Push(Hero * ptr)
 {
-	mData[mCount++] = *ptr;
-	return false;
+	if (IsFull() == false)
+	{
+		mData[mCount++] = *ptr;
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 bool Stack::IsEmpty()
@@ -26,11 +38,6 @@ bool Stack::IsEmpty()
 bool Stack::IsFull()
 {
 	return (mCount == 10);
-}
-
-Stack::Stack()
-{
-	mCount = 0;
 }
 
 

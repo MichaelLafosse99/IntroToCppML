@@ -11,13 +11,13 @@ int main()
 	Stack Team1;
 	Stack Team2;
 
-	iterate->ChangeHeroName("IronMan");
+	iterate++->ChangeHeroName("Ironman");
 	Team1.Push(iterate++);
-	iterate->ChangeHeroName("Capteen AmuriCA");
+	iterate++->ChangeHeroName("Capteen AmuriCA");
 	Team2.Push(iterate++);
 	
 	Game CivilWar;
-	CivilWar.Battle(iterate[0], iterate[1]);
+	CivilWar.Battle(everyHero[0], everyHero[1]);
 
 	std::cout << "Waiting For Next Patch Release.." << std::endl;
 	system("pause");

@@ -9,11 +9,12 @@ private:
 	int mCount;
 
 public:
+	Stack();
 	Hero Top();
 	bool Pop();
 	bool Push(Hero*);
 	bool IsEmpty();
 	bool IsFull();
-	Stack();
+	
 
 };
