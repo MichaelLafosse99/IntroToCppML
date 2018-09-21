@@ -42,7 +42,7 @@ void Hero::ChangeAttackName()
 
 void Hero::ChangeHeroName()
 {
-	mName = (char*) "Cap";
+	mName = (char*)"Cap";
 }
 
 void Hero::HeroDHealth()
