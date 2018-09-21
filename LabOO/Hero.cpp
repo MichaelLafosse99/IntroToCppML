@@ -20,12 +20,12 @@ void Hero::PrintName()
 {
 	std::cout << mName << std::endl;
 }
-
-void Hero::Heroes()
+//What each hero has
+Hero::Hero()
 {
 	mNameAttack = new char[255];
 	mName = new char[255];
-	HeroDHealth();
+	mHealth = 100;
 	ChangeAttackName();
 	
 }
@@ -44,13 +44,8 @@ void Hero::ChangeAttackName()
 		mNameAttack = (char*)"Whooped dat ass";
 	}
 }
-
-void Hero::ChangeHeroName()
+//Changes Hero Name
+void Hero::ChangeHeroName(char* name)
 {
-	mName = (char*)"Cap";
-}
-
-void Hero::HeroDHealth()
-{
-	mHealth = 100;
+	mName = (char*)name;
 }

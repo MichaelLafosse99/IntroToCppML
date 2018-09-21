@@ -18,8 +18,7 @@ public:
 	void TakeDamage(int amountD);
 	//Custom Functions
 	void PrintName();
-	void Heroes();
+	Hero();
 	void ChangeAttackName();
-	void ChangeHeroName();
-	void HeroDHealth();
+	void ChangeHeroName(char* name);
 };
