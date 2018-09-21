@@ -20,18 +20,17 @@ bool Stack::Push(Hero * ptr)
 
 bool Stack::IsEmpty()
 {
-	if (IsEmpty())
-	{
-		mCount = 0;
-	}
-	return false;
+	return (mCount == 0);
 }
 
 bool Stack::IsFull()
 {
-	if (IsFull())
-	{
-		mCount = 20;
-	}
-	return false;
+	return (mCount == 10);
 }
+
+Stack::Stack()
+{
+	mCount = 0;
+}
+
+

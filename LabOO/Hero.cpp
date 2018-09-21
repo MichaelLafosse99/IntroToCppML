@@ -18,7 +18,7 @@ void Hero::TakeDamage(int amountD)
 
 void Hero::PrintName()
 {
-	std::cout << mName << std::endl;
+	std::cout << (char*) mName;
 }
 //What each hero has
 Hero::Hero()
@@ -37,15 +37,16 @@ void Hero::ChangeAttackName()
 
 	if (mAttack < 5)
 	{
-		mNameAttack = (char*)"Grazed";
+		mNameAttack = "Grazed";
 	}
 	if (mAttack > 5)
 	{
-		mNameAttack = (char*)"Whooped dat ass";
+		mNameAttack = "Whooped dat ass";
+		
 	}
 }
 //Changes Hero Name
-void Hero::ChangeHeroName(char* name)
+void Hero::ChangeHeroName(const char* name)
 {
-	mName = (char*)name;
+	mName = name;
 }

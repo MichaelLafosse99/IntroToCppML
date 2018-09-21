@@ -8,8 +8,8 @@ class Hero
 private:
 	int mHealth;
 	int mAttack;
-	char* mName;
-	char* mNameAttack;
+	const char* mName;
+	const char* mNameAttack;
 
 public:
 	//Required Functions
@@ -17,8 +17,8 @@ public:
 	bool IsAlive();
 	void TakeDamage(int amountD);
 	//Custom Functions
-	void PrintName();
+	void ChangeHeroName(const char* name);
 	Hero();
 	void ChangeAttackName();
-	void ChangeHeroName(char* name);
+	void PrintName();
 };

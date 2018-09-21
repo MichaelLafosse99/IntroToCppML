@@ -9,16 +9,20 @@ Hero Game::Battle(Hero & hero1, Hero & hero2)
 	}
 	if (hero1.IsAlive() == false)
 	{
-		std::cout << &hero1 << " has been defeated!" << std::endl;
+		hero1.PrintName();
+		std::cout << " has been defeated!" << std::endl;
 		std::cout << std::endl;
-		std::cout << &hero2 << " is the winner!" << std::endl;
+		hero1.PrintName();
+		std::cout << " is the winner!" << std::endl;
 		return hero1;
 	}
 	if (hero2.IsAlive() == false)
 	{
-		std::cout << &hero2 << " has been defeated!" << std::endl;
+		hero1.PrintName();
+		std::cout << " has been defeated!" << std::endl;
 		std::cout << std::endl;
-		std::cout << &hero1 << " is the winner!" << std::endl;
+		hero1.PrintName();
+		std::cout << " is the winner!" << std::endl;
 		return hero2;
 	}
 	return Hero();

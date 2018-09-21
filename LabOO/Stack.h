@@ -7,7 +7,6 @@ private:
 	//mData is all of the heros
 	Hero mData[10];
 	int mCount;
-	Hero *ptr;
 
 public:
 	Hero Top();
@@ -15,4 +14,6 @@ public:
 	bool Push(Hero*);
 	bool IsEmpty();
 	bool IsFull();
+	Stack();
+
 };
