@@ -2,7 +2,7 @@
 
 Hero Stack::Top()
 {
-	//std::cout << mData[mCount] << std::endl;
+	mData[mCount].PrintName;
 	return Hero();
 }
 

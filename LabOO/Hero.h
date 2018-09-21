@@ -17,7 +17,8 @@ public:
 	bool IsAlive();
 	void TakeDamage(int amountD);
 	//Custom Functions
-	void hero();
+	void PrintName();
+	void Heroes();
 	void ChangeAttackName();
 	void ChangeHeroName();
 	void HeroDHealth();

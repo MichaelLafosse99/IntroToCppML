@@ -16,7 +16,12 @@ void Hero::TakeDamage(int amountD)
 	mHealth -= amountD;
 }
 
-void Hero::hero()
+void Hero::PrintName()
+{
+	std::cout << mName << std::endl;
+}
+
+void Hero::Heroes()
 {
 	mNameAttack = new char[255];
 	mName = new char[255];
