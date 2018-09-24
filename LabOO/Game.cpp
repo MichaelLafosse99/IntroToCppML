@@ -47,10 +47,12 @@ Hero Game::Battle(Hero & hero1, Hero & hero2)
 	//If hero1 is alive it prints out the following:
 	if (hero1.IsAlive() == false)
 	{
-		hero2.PrintName();
+		//Had to reverse the name printed due to small bug:
+		//It really means, hero2 wins and hero1 has died.
+		hero1.PrintName();
 		std::cout << " has been defeated!" << std::endl;
 		std::cout << std::endl;
-		hero1.PrintName();
+		hero2.PrintName();
 		std::cout << " is the winner!" << std::endl;
 		std::cout << std::endl;
 		return hero1;
@@ -58,10 +60,12 @@ Hero Game::Battle(Hero & hero1, Hero & hero2)
 	//If hero2 is alive it prints out the following:
 	if (hero2.IsAlive() == false)
 	{
-		hero1.PrintName();
+		//Had to reverse the name printed due to small bug:
+		//It really means, hero2 wins and hero1 has died.
+		hero2.PrintName();
 		std::cout << " has been defeated!" << std::endl;
 		std::cout << std::endl;
-		hero2.PrintName();
+		hero1.PrintName();
 		std::cout << " is the winner!" << std::endl;
 		std::cout << std::endl;
 		return hero2;
