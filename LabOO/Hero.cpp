@@ -3,6 +3,7 @@
 //function that makes a hero take damage with calling another functio
 void Hero::Fight(Hero & hero)
 {
+	mAttack = rand() % 101;
 	hero.TakeDamage(mAttack);
 }
 //Function to check if hero's health is greater than 0.
