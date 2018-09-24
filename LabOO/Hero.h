@@ -25,8 +25,5 @@ public:
 	void PrintDamage();
 	void PrintCurrentHealth();
 	//Operator
-	bool operator == (Hero & NewHealth)
-	{
-		return mHealth + mAttack == NewHealth.mHealth;
-	}
+	bool operator != (const Hero& otherHero);
 };

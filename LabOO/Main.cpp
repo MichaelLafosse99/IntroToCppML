@@ -28,6 +28,9 @@ int main()
 	iterate->ChangeHeroName("Capteen AmuriCA");
 	Team2.Push(iterate++);
 	
+	//if (*(iterate) != *(iterate + 1))
+	//{
+	//	std::cout << "they not be da same";
 	Game CivilWar;
 	CivilWar.Battle(everyHero[0], everyHero[1]);
 
