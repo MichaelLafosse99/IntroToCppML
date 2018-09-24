@@ -16,15 +16,36 @@ int main()
 
 	//This is what makes the new heroes, assigning their names.
 	Hero* everyHero = new Hero[numHeroes]();
-	Hero* iterate = &everyHero[0];
+	Hero* iterate = &everyHero[0 ];
 
 	//Both team.
 	Stack Team1;
 	Stack Team2;
 
-	//Actually assigning the heroes their names, and which team they are apart of.
+	//Actually assigning the heroes their names, and which team they are apart of:
+
+	//Team1
 	iterate->ChangeHeroName("Ironman");
 	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Spider-Man");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Thor");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Hulk");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Doctor Strange");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Black Widow");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Deadpool");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Luke Cage");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("The Punisher");
+	Team1.Push(iterate++);
+	iterate->ChangeHeroName("Daredevil");
+	Team1.Push(iterate++);
+	//Team2
 	iterate->ChangeHeroName("Capteen AmuriCA");
 	Team2.Push(iterate++);
 	
@@ -32,7 +53,7 @@ int main()
 	//{
 	//	std::cout << "they not be da same";
 	Game CivilWar;
-	CivilWar.Battle(everyHero[0], everyHero[1]);
+	
 
 	std::cout << std::endl;
 	std::cout << "Waiting For Next Patch Release.." << std::endl;
