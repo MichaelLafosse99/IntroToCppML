@@ -15,6 +15,4 @@ public:
 	bool Push(Hero*);
 	bool IsEmpty();
 	bool IsFull();
-	
-
 };
