@@ -18,4 +18,6 @@ public:
 	bool IsFull();
 	Hero& RandHero(int num);
 	bool TeamIsDead();
+	void OrganizeHeroes();
+	int& Count();
 };

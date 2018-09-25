@@ -8,23 +8,7 @@ Hero Game::Battle(Hero & hero1, Hero & hero2)
 
 		hero1.Fight(hero2);
 		//If hero2 is alive it prints out the following:
-		if (hero1.IsAlive() == false)
-		{
-			hero1.PrintName();
-			std::cout << " has been defeated!" << std::endl;
-			std::cout << std::endl;
-			hero2.PrintName();
-			std::cout << " is the winner!" << std::endl;
-			std::cout << std::endl;
-
-			system("pause");
-			system("cls");
-			return hero2;
-		}
-		hero2.Fight(hero1);
-		//If hero1 is alive it prints out the following:
-
-		if (hero2.IsAlive() == false)
+		if (hero2.IsAlive() == false && hero1.IsAlive())
 		{
 			hero2.PrintName();
 			std::cout << " has been defeated!" << std::endl;
@@ -37,6 +21,23 @@ Hero Game::Battle(Hero & hero1, Hero & hero2)
 			system("cls");
 			return hero1;
 		}
+
+		hero2.Fight(hero1);
+		//If hero1 is alive it prints out the following:
+		if (hero1.IsAlive() == false && hero2.IsAlive())
+		{
+			hero1.PrintName();
+			std::cout << " has been defeated!" << std::endl;
+			std::cout << std::endl;
+			hero2.PrintName();
+			std::cout << " is the winner!" << std::endl;
+			std::cout << std::endl;
+
+			system("pause");
+			system("cls");
+			return hero2;
+		}
+		
 		//InCase of fuck up use this:
 		/*if (hero1.IsAlive() && hero2.IsAlive())
 		{
@@ -87,7 +88,6 @@ Hero Game::Battle(Hero & hero1, Hero & hero2)
 		system("pause");
 		system("cls");
 	}*/
-
 
 	}
 		return Hero();

@@ -68,10 +68,14 @@ void Hero::PrintCurrentHealth()
 	std::cout << "'s Current Health is: " << mHealth;
 }
 
-//Operator
+//Operators
 bool Hero::operator != (const Hero & otherHero)
 {
 	return this->mHealth == otherHero.mHealth && this->mAttack != otherHero.mAttack;
+}
+bool Hero::operator < (const Hero & otherHero)
+{
+	return this->mHealth < otherHero.mHealth;
 }
 
 //What each hero has

@@ -4,7 +4,7 @@ int main()
 {
 	srand(time(0));
 	int numHeroes = 12;
-	int randHero = rand() % 6;
+	int randHero;
 
 	std::cout << "Incoming signal..." << "\a" << std::endl;
 	std::cout << std::endl;
@@ -54,20 +54,36 @@ int main()
 	Team2.Push(iterate++);
 
 
-	//if (*(iterate) != *(iterate + 1))
-	//{
-	//	std::cout << "they not be da same";
-	//}
 
 	Game CivilWar;
 	//Taking the top hero from each team and making them fight a random
 	//hero from the opposite team.
-	while (Team1.TeamIsDead() && Team2.TeamIsDead())
+	while (!Team1.TeamIsDead() && !Team2.TeamIsDead())
 	{
-		CivilWar.Battle(Team1.Top(), Team2.RandHero(randHero));
-		CivilWar.Battle(Team2.Top(), Team1.RandHero(randHero));
+		int randHeroA = rand() % Team1.Count();
+		int randHeroB = rand() % Team2.Count();
+
+		//Organizing the teams:
+		Team1.OrganizeHeroes();
+		Team2.OrganizeHeroes();
+
+		Hero& team1Fighter = Team1.RandHero(randHeroA);
+		Hero& team2Fighter = Team2.RandHero(randHeroB);
+		CivilWar.Battle(team1Fighter, team2Fighter);
+
+		//Popping off any dead heroes.
+		Team1.Pop();
+		Team2.Pop();
 	}
+
 	std::cout << std::endl;
 	std::cout << "Waiting For Next Patch Release.." << std::endl;
 	system("pause");
+
+	//Test Operator
+
+	//if (*(iterate) != *(iterate + 1))
+	//{
+	//	std::cout << "they not be da same";
+	//}
 }

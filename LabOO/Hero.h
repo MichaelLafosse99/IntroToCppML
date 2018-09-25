@@ -20,16 +20,25 @@ public:
 	//Custom Functions
 	void ChangeHeroName(const char* name);
 	Hero();
-	/*Hero(const char* name)
+	Hero(const char* name)
 	{
+		mNameAttack = new char[255];
+		mName = new char[255];
+		mHealth = 100;
 		mName = name;
-	}*/
+		ChangeAttackName();
+	}
 	void ChangeAttackName();
 	void PrintName();
 	void PrintAttack();
 	void PrintDamage();
 	void PrintCurrentHealth();
+	int GetHealth()
+	{
+		return mHealth;
+	}
 
 	//Operator
 	bool operator != (const Hero& otherHero);
+	bool operator < (const Hero& otherHero);
 };
