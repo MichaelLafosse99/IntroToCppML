@@ -5,10 +5,9 @@ Stack::Stack()
 	mCount = 0;
 }
 //The hero that's on the top of the stack.
-Hero Stack::Top()
+Hero& Stack::Top()
 {
-	mData[mCount].PrintName();
-	return Hero();
+	return mData[mCount - 1];
 }
 //Pop's off the dead heroes.
 bool Stack::Pop()
@@ -38,6 +37,23 @@ bool Stack::IsEmpty()
 bool Stack::IsFull()
 {
 	return (mCount == 10);
+}
+
+Hero& Stack::RandHero(int num)
+{
+	return mData[num];
+}
+
+bool Stack::TeamIsDead()
+{
+	for (int i = 0; i < numHeroes; i++)
+	{
+		if (mData[i].IsAlive())
+		{
+			return false;
+		}
+	}
+	return true;
 }
 
 

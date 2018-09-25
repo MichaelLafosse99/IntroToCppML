@@ -16,14 +16,20 @@ public:
 	void Fight(Hero&);
 	bool IsAlive();
 	void TakeDamage(int amountD);
+
 	//Custom Functions
 	void ChangeHeroName(const char* name);
 	Hero();
+	/*Hero(const char* name)
+	{
+		mName = name;
+	}*/
 	void ChangeAttackName();
 	void PrintName();
 	void PrintAttack();
 	void PrintDamage();
 	void PrintCurrentHealth();
+
 	//Operator
 	bool operator != (const Hero& otherHero);
 };

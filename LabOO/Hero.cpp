@@ -91,37 +91,30 @@ void Hero::ChangeAttackName()
 
 	if (mAttack <= 10)
 	{
-		
 		mNameAttack = "Grazed";
 	}
 	if (mAttack > 10 && mAttack <= 20)
 	{
-		
 		mNameAttack = "Shanked";
 	}
 	if (mAttack > 20 && mAttack <= 40)
 	{
-		
 		mNameAttack = "Blasted";
 	}
 	if (mAttack > 40 && mAttack <= 60)
 	{
-		
 		mNameAttack = "Spartan Kicked";
 	}
 	if (mAttack > 60 && mAttack <= 80)
 	{
-		
 		mNameAttack = "Used A Rusty Spoon On";
 	}
 	if (mAttack > 80 && mAttack <= 99)
 	{
-		
 		mNameAttack = "Threw A Car At";
 	}
 	if (mAttack == 100)
 	{
-		
 		mNameAttack = "Obliterated";
 	}
 }
