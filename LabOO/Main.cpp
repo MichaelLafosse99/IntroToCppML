@@ -32,7 +32,7 @@ int main()
 	Team1.Push(iterate++);
 	iterate->ChangeHeroName("Thor");
 	Team1.Push(iterate++);
-	iterate->ChangeHeroName("Hulk");
+	iterate->ChangeHeroName("Groot");
 	Team1.Push(iterate++);
 	iterate->ChangeHeroName("Doctor Strange");
 	Team1.Push(iterate++);
@@ -50,16 +50,17 @@ int main()
 	Team2.Push(iterate++);
 	iterate->ChangeHeroName("Daredevil");
 	Team2.Push(iterate++);
-	iterate->ChangeHeroName("Thanos");
+	iterate->ChangeHeroName("Hulk");
 	Team2.Push(iterate++);
 
 
 
 	Game CivilWar;
-	//Taking the top hero from each team and making them fight a random
-	//hero from the opposite team.
-	while (!Team1.TeamIsDead() && !Team2.TeamIsDead())
+
+	while (Team1.TeamIsDead() == false && Team2.TeamIsDead() == false)
 	{
+		//The rand functions choose random hero from the
+		//number of heroes on that particular team
 		int randHeroA = rand() % Team1.Count();
 		int randHeroB = rand() % Team2.Count();
 
@@ -67,6 +68,7 @@ int main()
 		Team1.OrganizeHeroes();
 		Team2.OrganizeHeroes();
 
+		//This is making a random hero from team1 fight a random hero from team 2.
 		Hero& team1Fighter = Team1.RandHero(randHeroA);
 		Hero& team2Fighter = Team2.RandHero(randHeroB);
 		CivilWar.Battle(team1Fighter, team2Fighter);
@@ -74,6 +76,19 @@ int main()
 		//Popping off any dead heroes.
 		Team1.Pop();
 		Team2.Pop();
+
+		if (Team1.TeamIsDead() && Team2.TeamIsDead() == false)
+		{
+			std::cout << "Team 1 Has Been Defeated.." << std::endl;
+			std::cout << std::endl;
+			std::cout << "Team 2 Is The Winning Team!" << std::endl;
+		}
+		if (Team1.TeamIsDead() == false && Team2.TeamIsDead())
+		{
+			std::cout << "Team 2 Has Been Defeated.." << std::endl;
+			std::cout << std::endl;
+			std::cout << "Team 1 Is The Winning Team!" << std::endl;
+		}
 	}
 
 	std::cout << std::endl;

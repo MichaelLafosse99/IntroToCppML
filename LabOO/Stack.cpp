@@ -1,15 +1,18 @@
 #include "Stack.h"
 
+//A constructor to access mCount and numHeroes.
 Stack::Stack()
 {
 	mCount = 0;
 	numHeroes = 0;
 }
+
 //The hero that's on the top of the stack.
 Hero& Stack::Top()
 {
 	return mData[mCount - 1];
 }
+
 //Pop's off the dead heroes.
 bool Stack::Pop()
 {
@@ -22,6 +25,7 @@ bool Stack::Pop()
 	}
 	return true;
 }
+
 //Pushes a hero on either team, if not full.
 bool Stack::Push(Hero * ptr)
 {
@@ -37,14 +41,16 @@ bool Stack::Push(Hero * ptr)
 	}
 }
 
+//When the stack is empty it returns count as 0
 bool Stack::IsEmpty()
 {
 	return (mCount == 0);
 }
 
+//When the stack is full it returns count as 6
 bool Stack::IsFull()
 {
-	return (mCount == 10);
+	return (mCount == 6);
 }
 
 //Puts a random hero's index in the mData array

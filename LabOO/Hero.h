@@ -38,7 +38,7 @@ public:
 		return mHealth;
 	}
 
-	//Operator
+	//Operators
 	bool operator != (const Hero& otherHero);
 	bool operator < (const Hero& otherHero);
 };

@@ -18,15 +18,18 @@ void Hero::Fight(Hero & hero)
 	hero.PrintName();
 	hero.TakeDamage(mAttack);
 	std::cout << std::endl;
+	std::cout << std::endl;
 
 	//Prints amount of damage done:
 	PrintDamage();
+	std::cout << std::endl;
 	std::cout << std::endl;
 
 	//Prints hero taking the damage's health:
 	hero.PrintCurrentHealth();
 	std::cout << std::endl;
 	std::cout << std::endl;
+
 	system("pause");
 	system("cls");
 }
@@ -58,14 +61,14 @@ void Hero::PrintAttack()
 //Displays the damage done to a hero.
 void Hero::PrintDamage()
 {
-	std::cout << "Doing " << mAttack  << " " << "Damage";
+	std::cout << "Damage Done: " << " " << mAttack;
 }
 
 //Displays the hero's (who was just damaged) current health.
 void Hero::PrintCurrentHealth()
 {
 	PrintName();
-	std::cout << "'s Current Health is: " << mHealth;
+	std::cout << "'s Current Health: " << mHealth;
 }
 
 //Operators
@@ -99,7 +102,7 @@ void Hero::ChangeAttackName()
 	}
 	if (mAttack > 10 && mAttack <= 20)
 	{
-		mNameAttack = "Shanked";
+		mNameAttack = "Uppercut";
 	}
 	if (mAttack > 20 && mAttack <= 40)
 	{
@@ -111,15 +114,15 @@ void Hero::ChangeAttackName()
 	}
 	if (mAttack > 60 && mAttack <= 80)
 	{
-		mNameAttack = "Used A Rusty Spoon On";
+		mNameAttack = "Threw Debris At";
 	}
 	if (mAttack > 80 && mAttack <= 99)
 	{
-		mNameAttack = "Threw A Car At";
+		mNameAttack = "Body Slammed";
 	}
 	if (mAttack == 100)
 	{
-		mNameAttack = "Obliterated";
+		mNameAttack = "F@#*ED UP";
 	}
 }
 
