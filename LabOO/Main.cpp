@@ -16,6 +16,8 @@ int main()
 	system("cls");
 
 	//This is what makes the new heroes, assigning their names.
+	//It is a pointer of everyHero pointing to a collector which is
+	//new Hero[numHeroes]()
 	Hero* everyHero = new Hero[numHeroes]();
 	Hero* iterate = &everyHero[0];
 
@@ -53,12 +55,11 @@ int main()
 	iterate->ChangeHeroName("Hulk");
 	Team2.Push(iterate++);
 
-
-
 	Game CivilWar;
 
 	while (Team1.TeamIsDead() == false && Team2.TeamIsDead() == false)
 	{
+		
 		//The rand functions choose random hero from the
 		//number of heroes on that particular team
 		int randHeroA = rand() % Team1.Count();
@@ -79,15 +80,19 @@ int main()
 
 		if (Team1.TeamIsDead() && Team2.TeamIsDead() == false)
 		{
-			std::cout << "Team 1 Has Been Defeated.." << std::endl;
+			std::cout << "+==================+==================+" << std::endl;
 			std::cout << std::endl;
 			std::cout << "Team 2 Is The Winning Team!" << std::endl;
+			std::cout << std::endl;
+			std::cout << "+==================+==================+" << std::endl;
 		}
 		if (Team1.TeamIsDead() == false && Team2.TeamIsDead())
 		{
-			std::cout << "Team 2 Has Been Defeated.." << std::endl;
+			std::cout << "+==================+==================+" << std::endl;
 			std::cout << std::endl;
 			std::cout << "Team 1 Is The Winning Team!" << std::endl;
+			std::cout << std::endl;
+			std::cout << "+==================+==================+" << std::endl;
 		}
 	}
 

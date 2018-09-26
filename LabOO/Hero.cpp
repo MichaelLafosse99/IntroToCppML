@@ -2,7 +2,14 @@
 
 //function that makes a hero take damage with calling another functio
 void Hero::Fight(Hero & hero)
-{
+{	
+	DisplayTeams();
+
+	std::cout << std::endl;
+	std::cout << "+==================+==================+" << std::endl;
+	std::cout << "	    The Battle:" << std::endl;
+	std::cout << std::endl;
+
 	//Chaning Attack Name & Attack Value:
 	ChangeAttackName();
 
@@ -28,8 +35,9 @@ void Hero::Fight(Hero & hero)
 	//Prints hero taking the damage's health:
 	hero.PrintCurrentHealth();
 	std::cout << std::endl;
+	std::cout << "+==================+==================+" << std::endl;
 	std::cout << std::endl;
-
+	
 	system("pause");
 	system("cls");
 }
@@ -70,6 +78,8 @@ void Hero::PrintCurrentHealth()
 	PrintName();
 	std::cout << "'s Current Health: " << mHealth;
 }
+
+
 
 //Operators
 bool Hero::operator != (const Hero & otherHero)
@@ -130,4 +140,21 @@ void Hero::ChangeAttackName()
 void Hero::ChangeHeroName(const char* name)
 {
 	mName = name;
+}
+
+void Hero::DisplayTeams()
+{
+	std::cout << "+==================+==================+" << std::endl;
+	std::cout << "	    Teams:" << std::endl;
+	std::cout << "Team 1:" << "			" << "Team 2:" << std::endl;
+	std::cout << "-------" << "			" << "-------" << std::endl;
+	std::cout << std::endl;
+	std::cout << "Ironman" << "			" << "Captain America" << std::endl;
+	std::cout << "Spider-Man" << "		" << "Deadpool" << std::endl;
+	std::cout << "Thor" << "			" << "Luke Cage" << std::endl;
+	std::cout << "Groot" << "			" << "The Punisher" << std::endl;
+	std::cout << "Doctor Strange" << "		Daredevil" << std::endl;
+	std::cout << "Black Widow" << "		Hulk" << std::endl;
+	std::cout << "+==================+==================+" << std::endl;
+	std::cout << std::endl;
 }

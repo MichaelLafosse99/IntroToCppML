@@ -37,6 +37,7 @@ public:
 	{
 		return mHealth;
 	}
+	void DisplayTeams();
 
 	//Operators
 	bool operator != (const Hero& otherHero);
