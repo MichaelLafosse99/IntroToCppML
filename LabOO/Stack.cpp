@@ -13,7 +13,7 @@ Hero& Stack::Top()
 	return mData[mCount - 1];
 }
 
-//Pop's off the dead heroes.
+//If a hero dies, it decreases mCount in the mData array.
 bool Stack::Pop()
 {
 	for (int i = 0; i < mCount; i++)

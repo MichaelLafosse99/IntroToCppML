@@ -79,7 +79,11 @@ void Hero::PrintCurrentHealth()
 	std::cout << "'s Current Health: " << mHealth;
 }
 
-
+//This function returns the mHealth of a hero.
+int Hero::GetHealth()
+{
+	return mHealth;
+}
 
 //Operators
 bool Hero::operator != (const Hero & otherHero)
@@ -91,12 +95,23 @@ bool Hero::operator < (const Hero & otherHero)
 	return this->mHealth < otherHero.mHealth;
 }
 
-//What each hero has
+//Both of these contain what each hero has:
+//They work together, one sets the name as a const char*
+//The other is used in the main.cpp, as a collector.
 Hero::Hero()
 {
 	mNameAttack = new char[255];
 	mName = new char[255];
 	mHealth = 100;
+	ChangeAttackName();
+}
+
+Hero::Hero(const char * name)
+{
+	mNameAttack = new char[255];
+	mName = new char[255];
+	mHealth = 100;
+	mName = name;
 	ChangeAttackName();
 }
 
@@ -142,6 +157,7 @@ void Hero::ChangeHeroName(const char* name)
 	mName = name;
 }
 
+//This is what displays the two teams throught the game
 void Hero::DisplayTeams()
 {
 	std::cout << "+==================+==================+" << std::endl;

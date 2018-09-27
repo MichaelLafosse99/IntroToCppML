@@ -12,34 +12,24 @@ private:
 	const char* mNameAttack;
 
 public:
-	//Required Functions
+	//Required:
 	void Fight(Hero&);
 	bool IsAlive();
 	void TakeDamage(int amountD);
 
-	//Custom Functions
+	//Added:
 	void ChangeHeroName(const char* name);
 	Hero();
-	Hero(const char* name)
-	{
-		mNameAttack = new char[255];
-		mName = new char[255];
-		mHealth = 100;
-		mName = name;
-		ChangeAttackName();
-	}
+	Hero(const char* name);
 	void ChangeAttackName();
 	void PrintName();
 	void PrintAttack();
 	void PrintDamage();
 	void PrintCurrentHealth();
-	int GetHealth()
-	{
-		return mHealth;
-	}
+	int GetHealth();
 	void DisplayTeams();
 
-	//Operators
+	//Operators:
 	bool operator != (const Hero& otherHero);
 	bool operator < (const Hero& otherHero);
 };

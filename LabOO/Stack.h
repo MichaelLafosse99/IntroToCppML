@@ -10,12 +10,17 @@ private:
 	int numHeroes;
 
 public:
+	//Constructor:
 	Stack();
+
+	//Required:
 	Hero& Top();
 	bool Pop();
 	bool Push(Hero*);
 	bool IsEmpty();
 	bool IsFull();
+
+	//Added:
 	Hero& RandHero(int num);
 	bool TeamIsDead();
 	void OrganizeHeroes();
