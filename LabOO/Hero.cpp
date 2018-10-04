@@ -167,7 +167,7 @@ void Hero::DisplayTeams()
 }
 
 //Test Operator:
-//bool Hero::operator < (const Hero & otherHero)
-//{
-//	return this->mHealth < otherHero.mHealth;
-//}
+bool Hero::operator < (const Hero & otherHero)
+{
+	return this->mHealth < otherHero.mHealth;
+}

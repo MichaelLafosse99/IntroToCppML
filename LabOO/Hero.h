@@ -30,5 +30,5 @@ public:
 	void DisplayTeams();
 
 	//Test Operator:
-	//bool operator < (const Hero& otherHero);
+	bool operator < (const Hero& otherHero);
 };
