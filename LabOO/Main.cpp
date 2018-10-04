@@ -100,5 +100,4 @@ int main()
 	std::cout << std::endl;
 	std::cout << "Waiting For Next Patch Release.." << std::endl;
 	system("pause");
-	
 }
