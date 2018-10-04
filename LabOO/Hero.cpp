@@ -85,15 +85,6 @@ int Hero::GetHealth()
 	return mHealth;
 }
 
-//Operators
-bool Hero::operator != (const Hero & otherHero)
-{
-	return this->mHealth == otherHero.mHealth && this->mAttack != otherHero.mAttack;
-}
-bool Hero::operator < (const Hero & otherHero)
-{
-	return this->mHealth < otherHero.mHealth;
-}
 
 //Both of these contain what each hero has:
 //They work together, one sets the name as a const char*
@@ -174,3 +165,9 @@ void Hero::DisplayTeams()
 	std::cout << "+==================+==================+" << std::endl;
 	std::cout << std::endl;
 }
+
+//Test Operator:
+//bool Hero::operator < (const Hero & otherHero)
+//{
+//	return this->mHealth < otherHero.mHealth;
+//}

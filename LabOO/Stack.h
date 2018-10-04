@@ -7,7 +7,7 @@ private:
 	//mData is all of the heros
 	Hero mData[6];
 	int mCount;
-	int numHeroes;
+	int mNumHeroes;
 
 public:
 	//Constructor:

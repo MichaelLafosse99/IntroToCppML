@@ -4,7 +4,7 @@
 Stack::Stack()
 {
 	mCount = 0;
-	numHeroes = 0;
+	mNumHeroes = 0;
 }
 
 //The hero that's on the top of the stack.
@@ -32,7 +32,7 @@ bool Stack::Push(Hero * ptr)
 	if (IsFull() == false)
 	{
 		mData[mCount++] = *ptr;
-		numHeroes++;
+		mNumHeroes++;
 		return true;
 	}
 	else
@@ -62,7 +62,7 @@ Hero& Stack::RandHero(int num)
 //Checks to see if a team is dead.
 bool Stack::TeamIsDead()
 {
-	for (int i = 0; i < numHeroes; i++)
+	for (int i = 0; i < mNumHeroes; i++)
 	{
 		if (mData[i].IsAlive())
 		{
@@ -73,13 +73,14 @@ bool Stack::TeamIsDead()
 }
 
 //Organizes teams by health from greatest to least.
+
 void Stack::OrganizeHeroes()
 {
 	Hero temp;
 
-	for (int i = 0; i < numHeroes; i++)
+	for (int i = 0; i < mNumHeroes; i++)
 	{
-		for (int j = 0; j < numHeroes; j++)
+		for (int j = 0; j < mNumHeroes; j++)
 		{
 			if (mData[j].GetHealth() < mData[i].GetHealth())
 			{

@@ -4,7 +4,6 @@ int main()
 {
 	srand(time(0));
 	int numHeroes = 12;
-	int randHero;
 
 	std::cout << "Incoming signal..." << "\a" << std::endl;
 	std::cout << std::endl;
@@ -55,6 +54,8 @@ int main()
 	iterate->ChangeHeroName("Hulk");
 	Team2.Push(iterate++);
 
+	delete everyHero;
+
 	Game CivilWar;
 
 	while (Team1.TeamIsDead() == false && Team2.TeamIsDead() == false)
@@ -99,11 +100,5 @@ int main()
 	std::cout << std::endl;
 	std::cout << "Waiting For Next Patch Release.." << std::endl;
 	system("pause");
-
-	//Test Operator
-
-	//if (*(iterate) != *(iterate + 1))
-	//{
-	//	std::cout << "they not be da same";
-	//}
+	
 }

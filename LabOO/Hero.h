@@ -29,7 +29,6 @@ public:
 	int GetHealth();
 	void DisplayTeams();
 
-	//Operators:
-	bool operator != (const Hero& otherHero);
-	bool operator < (const Hero& otherHero);
+	//Test Operator:
+	//bool operator < (const Hero& otherHero);
 };
